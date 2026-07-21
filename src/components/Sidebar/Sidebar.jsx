@@ -88,11 +88,7 @@ const Sidebar = () => {
           >
             <a href={`#${id}`}>
               <span className="sidebarIcon">
-                {typeof icon === 'string' && icon.includes('.png') ? (
-                  <img src={icon} alt={label} className="iconSmall" />
-                ) : (
-                  icon
-                )}
+                <img src={icon} alt={label} className="iconSmall" />
               </span>
               <span className="sidebarText">{label}</span>
             </a>

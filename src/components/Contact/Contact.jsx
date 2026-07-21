@@ -20,7 +20,7 @@ const Contact = () => {
         </a>
         <a href="mailto:alex.salsan97@gmail.com">
           <img src={emailIcon} alt="Email" className="iconSmall iconContact" />
-          Email
+          alex.salsan97@gmail.com
         </a>
       </div>
     </section>

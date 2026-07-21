@@ -16,7 +16,7 @@ const ProjectsSection = () => {
           description="Aplicación web real de front-end completa, desarrollado desde 
           cero y basándose en las necesidades del cliente."
           tags={['React', 'CSS', 'JavaScript']}
-          link="https://youtube.com/tu-video"
+          link="https://dibujoastronomico-jesussalado.vercel.app"
         />
         <ProjectCard
           title="App de Back"

@@ -1,0 +1,90 @@
+.sidebarContainer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 220px;
+  display: flex;
+  align-items: center;
+  background: #131313;
+  z-index: 10;
+  overflow: visible;
+
+  & .sidebarList {
+    position: relative;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    & .sidebarItem {
+      position: relative;
+      overflow: hidden;
+      padding: 0.9rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      cursor: pointer;
+      z-index: 2;
+      border-radius: 12px;
+      transition: background 0.3s ease;
+
+      & a {
+        position: relative;
+        color: #ccc;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        transition: color 0.3s ease;
+      }
+
+      &.active {
+        transform: translateX(12px);
+        background: #1c1c1c;
+        border-radius: 16px;
+        box-shadow: -8px 0 16px rgba(0, 0, 0, 0.5);
+        border: 2px solid #131313;
+
+        & a {
+          color: #fff;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.rippleEffect {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(0);
+  animation: rippleAnim 600ms linear;
+  pointer-events: none;
+}
+
+@keyframes rippleAnim {
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebarContainer {
+    width: 100%;
+    height: 60px;
+    top: 0;
+    flex-direction: row;
+
+    & .sidebarList {
+      display: flex;
+      justify-content: space-around;
+
+      & .sidebarText {
+        display: none;
+      }
+    }
+  }
+}

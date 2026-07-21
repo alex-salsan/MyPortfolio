@@ -1,0 +1,62 @@
+/* ComponentsShowcase.css */
+.showcaseWrapper {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.showcaseTabs {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.tabBtn {
+  background: transparent;
+  border: 1px solid #2a2a2a;
+  color: #aaa;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition:
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.tabActive {
+  border-color: #7c5cff;
+  color: #b8a4ff;
+}
+
+.showcaseContent {
+  margin-bottom: 1.5rem;
+  min-height: 80px;
+}
+
+.variantsRow {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.toggleCodeBtn {
+  background: transparent;
+  border: 1px solid #7c5cff;
+  color: #b8a4ff;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.codeBlock {
+  background: #0f0f0f;
+  border: 1px solid #2a2a2a;
+  color: #ccc;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  overflow-x: auto;
+}

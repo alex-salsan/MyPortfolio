@@ -1,0 +1,33 @@
+.toggle {
+  width: 48px;
+  height: 26px;
+  background: #262626;
+  border: 1px solid #2a2a2a;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+.toggleOn {
+  background: #7c5cff33;
+  border-color: #7c5cff;
+}
+
+.toggleThumb {
+  width: 20px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition:
+    left 0.3s ease,
+    background 0.3s ease;
+}
+
+.toggleOn .toggleThumb {
+  left: 24px;
+  background: #b8a4ff;
+}

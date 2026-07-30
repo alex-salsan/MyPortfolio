@@ -7,7 +7,7 @@ const skillGroups = [
   },
   {
     category: 'Backend',
-    items: ['Node.js', 'Express', 'Java', 'Spring Boot', 'APIs REST'],
+    items: ['Node.js', 'Express', 'Java', 'Spring Boot', 'Python', 'APIs REST'],
   },
   {
     category: 'Bases de datos',
@@ -15,11 +15,11 @@ const skillGroups = [
   },
   {
     category: 'Salesforce',
-    items: ['Full Stack Apex'],
+    items: ['Apex', 'LWC'],
   },
   {
     category: 'Herramientas',
-    items: ['Git', 'GitHub', 'VS Code', 'Postman', 'Agile', 'Scrum'],
+    items: ['Git', 'GitHub', 'VS Code', 'Eclipse', 'Postman', 'Agile', 'Scrum', 'Suite Adobe'],
   },
 ]
 

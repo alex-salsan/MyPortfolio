@@ -3,7 +3,7 @@ import './Skills.css'
 const skillGroups = [
   {
     category: 'Frontend',
-    items: ['HTML5', 'CSS3', 'Flexbox', 'Grid', 'SASS', 'Bootstrap', 'Tailwind', 'JavaScript (ES6)', 'React', 'TypeScript'],
+    items: ['HTML5', 'CSS3', 'Flexbox', 'Grid', 'SASS', 'Bootstrap', 'Tailwind', 'JavaScript (ES6)', 'React', 'TypeScript', 'Angular', 'Responsive'],
   },
   {
     category: 'Backend',
@@ -19,8 +19,12 @@ const skillGroups = [
   },
   {
     category: 'Herramientas',
-    items: ['Git', 'GitHub', 'VS Code', 'Eclipse', 'Postman', 'Agile', 'Scrum', 'Suite Adobe'],
+    items: ['Git', 'GitHub', 'VS Code', 'Eclipse', 'Postman', 'Agile', 'Scrum', 'Jira', 'Suite Adobe'],
   },
+  {
+    category: 'IA generativa',
+    items: ['Analizar problemas', 'revisar código', 'proponer casos de prueba', 'elaborar documentación técnica.']
+  }
 ]
 
 const Skills = () => {

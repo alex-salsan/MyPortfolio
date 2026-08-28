@@ -31,7 +31,7 @@ const ComponentsShowcase = () => {
         ))}
       </div>
 
-      <div className="showcaseContent">
+      {/* <div className="showcaseContent">
         {activeTab === 'Button' && (
           <div className="variantsRow">
             <Button variant="primary">Primary</Button>
@@ -52,7 +52,7 @@ const ComponentsShowcase = () => {
         <pre className="codeBlock">
           <code>{codeSnippets[activeTab]}</code>
         </pre>
-      )}
+      )} */}
     </div>
   )
 }

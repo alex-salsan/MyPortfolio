@@ -36,7 +36,8 @@ const ProjectsSection = () => {
           tags={['React', 'CSS']}
           status={
             <>
-              <h4>Púlsame</h4>
+              <img src={processIcon} alt='En proceso' className='iconSmall iconContact' />
+              En proceso
             </>
           }
           onClick={() => {

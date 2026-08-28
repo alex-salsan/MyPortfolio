@@ -9,7 +9,7 @@ const milestones = [
   {
     year: '2024 - 2026',
     title: 'Operador de sala en Prosegur',
-    description: 'Gestión de sala de alarmas 24/7 usando una aplicación web interna (JavaScript/Node), operando software crítico en tiempo real. El contacto diario con el equipo técnico para reportar incidencias y comentar mejoras de usabilidad fue lo que despertó mi interés por entender y construir el código que hay detrás de estas herramientas.',
+    description: 'Gestión de incidencias en una sala de alarmas 24/7 mediante una aplicación web interna basada en JavaScript y Node.js. Comunicación directa con el equipo técnico para reportar errores y proponer mejoras de usabilidad desde la experiencia diaria como usuario avanzado.',
   },
   {
     year: '2023',
@@ -33,7 +33,7 @@ const AboutMe = () => {
     <section id="about" className="about">
       <h2>Sobre mí</h2>
       <p className="aboutIntro">
-        Vengo de un perfil poco típico: empecé en fotografía y modelado 3D, y mi formación en Deloitte junto con el uso diario de software crítico en Prosegur me llevó a especializarme en desarrollo web full-stack. Busco unirme a un equipo donde pueda seguir creciendo en programación y buenas prácticas, aportando atención al detalle, aprendizaje rápido y mentalidad centrada en el usuario.
+        Vengo de un perfil poco típico: empecé en fotografía y modelado 3D, y mi formación en desarrollo Salesforce con Deloitte, junto con el uso diario de software crítico en Prosegur, me llevó a especializarme en desarrollo web Full-Stack en Socratech. Me interesa crear aplicaciones web claras y mantenibles, combinando interfaces cuidadas, APIs REST y una base sólida de frontend y backend.
       </p>
 
       <div className="timeline">

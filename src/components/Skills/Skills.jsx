@@ -23,7 +23,7 @@ const skillGroups = [
   },
   {
     category: 'IA generativa',
-    items: ['Analizar problemas', 'revisar código', 'proponer casos de prueba', 'elaborar documentación técnica.']
+    items: ['Analizar problemas', 'revisar código', 'proponer casos de prueba', 'elaborar documentación técnica']
   }
 ]
 

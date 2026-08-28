@@ -1,4 +1,3 @@
-/* ComponentsShowcase.css */
 .showcaseWrapper {
   background: #1a1a1a;
   border: 1px solid #2a2a2a;
@@ -10,6 +9,7 @@
   display: flex;
   gap: 0.6rem;
   margin-bottom: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .tabBtn {
@@ -24,6 +24,10 @@
     color 0.3s ease;
 }
 
+.tabBtn:hover {
+  border-color: #7c5cff;
+}
+
 .tabActive {
   border-color: #7c5cff;
   color: #b8a4ff;
@@ -31,16 +35,34 @@
 
 .showcaseContent {
   margin-bottom: 1.5rem;
-  min-height: 80px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
 }
 
 .variantsRow {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-.toggleCodeBtn {
+.formPreview {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.showcaseActions {
+  display: flex;
+  gap: 0.8rem;
+  padding-inline: 1rem;
+}
+
+.toggleCodeBtn,
+.copyCodeBtn {
   background: transparent;
   border: 1px solid #7c5cff;
   color: #b8a4ff;
@@ -48,6 +70,12 @@
   border-radius: 20px;
   cursor: pointer;
   font-size: 0.85rem;
+  transition: background 0.3s ease;
+}
+
+.copyCodeBtn:hover,
+.toggleCodeBtn:hover {
+  background: #7c5cff33;
 }
 
 .codeBlock {
@@ -59,4 +87,5 @@
   margin-top: 1rem;
   font-size: 0.85rem;
   overflow-x: auto;
+  white-space: pre-wrap;
 }

@@ -1,0 +1,55 @@
+:root {
+  --form-bg-color-light: #1a1a1a;
+  --form-bg-color-glass: rgba(26, 26, 26, 0.6);
+}
+
+.formAS {
+  background-color: var(--form-bg-color-light);
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  padding-block: 2rem;
+  padding-inline: 2.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  inline-size: min(100%, 26rem);
+}
+
+.formAS.formAS-glass {
+  background-color: var(--form-bg-color-glass);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.formAS .formAS_title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.formAS .formAS_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .formAS {
+    padding-inline: 1.5rem;
+  }
+}
+
+.formas_form.formas_form-2cols {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.formas_form.formas_form-2cols .full {
+  grid-column: 1 / -1;
+}
+@media (max-width: 600px) {
+  .formas_form.formas_form-2cols {
+    grid-template-columns: 1fr;
+  }
+}

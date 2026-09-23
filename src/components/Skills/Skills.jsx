@@ -3,7 +3,7 @@ import './Skills.css'
 const skillGroups = [
   {
     category: 'Frontend',
-    items: ['HTML5', 'CSS3', 'Flexbox', 'Grid', 'SASS', 'Bootstrap', 'Tailwind', 'JavaScript (ES6)', 'React', 'TypeScript', 'Angular', 'Responsive'],
+    items: ['HTML5', 'CSS3', 'Flexbox', 'Grid', 'SASS', 'Bootstrap', 'Tailwind', 'JavaScript (ES6)', 'Vue', 'React', 'TypeScript', 'Angular', 'Responsive'],
   },
   {
     category: 'Backend',
@@ -23,7 +23,7 @@ const skillGroups = [
   },
   {
     category: 'IA generativa',
-    items: ['Analizar problemas', 'revisar código', 'proponer casos de prueba', 'elaborar documentación técnica']
+    items: ['GitHub Copilot', 'ChatGPT', 'Claude', 'Cursor', 'Debugging y tests']
   }
 ]
 

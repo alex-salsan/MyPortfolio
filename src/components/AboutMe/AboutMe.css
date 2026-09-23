@@ -61,4 +61,17 @@
     color: #ccc;
     font-size: 1.05rem;
   }
+
+  .timelineLink {
+    display: inline-block;
+    margin-top: 8px;
+    color: #a78bfa;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+
+  .timelineLink:hover {
+    text-decoration: underline;
+  }
 }

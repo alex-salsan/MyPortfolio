@@ -1,0 +1,42 @@
+.heroSection {
+  align-items: center;
+  text-align: center;
+
+  & .heroContent {
+    max-width: 600px;
+
+    & h1 {
+      font-size: clamp(2rem, 5vw, 2.8rem);
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  & .heroSubtitle {
+    color: var(--color-accent);
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  & .heroDescription {
+    color: var(--color-text-muted);
+    margin-bottom: 2rem;
+  }
+
+  & .heroButton {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    background: var(--color-accent);
+    color: var(--color-text-strong);
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    transition:
+      transform var(--transition-fast),
+      background var(--transition-fast);
+
+    &:hover {
+      background: var(--color-accent-hover);
+      transform: translateY(-2px);
+    }
+  }
+}

@@ -1,0 +1,87 @@
+.sidebarContainer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: var(--sidebar-width);
+  display: flex;
+  align-items: center;
+  background: var(--color-bg-sidebar);
+  z-index: 10;
+
+  & .sidebarList {
+    list-style: none;
+    width: 100%;
+  }
+
+  & .sidebarItem {
+    border-radius: var(--radius-md);
+    transition: background var(--transition), transform var(--transition);
+
+    &.active {
+      transform: translateX(12px);
+      background: var(--color-surface-raised);
+      border-radius: var(--radius-lg);
+      box-shadow: -8px 0 16px rgba(0, 0, 0, 0.5);
+      border: 2px solid var(--color-bg-sidebar);
+
+      & .sidebarLink {
+        color: var(--color-text-strong);
+        font-weight: 600;
+      }
+    }
+  }
+
+  & .sidebarLink {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.9rem 1.5rem;
+    border-radius: inherit;
+    color: var(--color-text-soft);
+    text-decoration: none;
+    transition: color var(--transition);
+
+    &:hover {
+      color: var(--color-text-strong);
+    }
+  }
+}
+
+.rippleEffect {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(0);
+  animation: rippleAnim 600ms linear;
+  pointer-events: none;
+}
+
+@keyframes rippleAnim {
+  to {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebarContainer {
+    width: 100%;
+    height: var(--mobile-nav-height);
+
+    & .sidebarList {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    & .sidebarItem.active {
+      transform: none;
+    }
+
+    & .sidebarText {
+      display: none;
+    }
+  }
+}

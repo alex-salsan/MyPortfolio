@@ -1,0 +1,21 @@
+/* El grano va por encima del contenido, como en una foto revelada */
+.filmGrain {
+  position: fixed;
+  inset: -50%;
+  z-index: 15;
+  pointer-events: none;
+  opacity: 0.06;
+  animation: filmGrain 0.8s steps(1) infinite;
+}
+
+/* Saltos bruscos de posición: el grano cambia por fotogramas, no se desliza */
+@keyframes filmGrain {
+  0% { transform: translate(0, 0); }
+  12% { transform: translate(-5%, -8%); }
+  25% { transform: translate(-12%, 4%); }
+  37% { transform: translate(7%, -14%); }
+  50% { transform: translate(-3%, 12%); }
+  62% { transform: translate(-14%, -2%); }
+  75% { transform: translate(10%, 6%); }
+  87% { transform: translate(3%, -10%); }
+}

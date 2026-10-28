@@ -1,0 +1,37 @@
+:root {
+  /* Superficies */
+  --color-bg: #0d0d0d;
+  --color-bg-sidebar: #131313;
+  --color-surface: #1a1a1a;
+  --color-surface-raised: #1c1c1c;
+  --color-surface-muted: #262626;
+  --color-border: #2a2a2a;
+
+  /* Texto */
+  --color-text: #e5e5e5;
+  --color-text-strong: #fff;
+  --color-text-soft: #ccc;
+  --color-text-muted: #aaa;
+
+  /* Marca */
+  --color-accent: #7c5cff;
+  --color-accent-hover: #6a4ce0;
+  --color-accent-soft: #b8a4ff;
+  --color-accent-light: #a78bfa;
+  --color-accent-alpha: #7c5cff33;
+
+  /* Layout */
+  --sidebar-width: 220px;
+  --mobile-nav-height: 60px;
+  --content-max-width: 900px;
+
+  /* Bordes */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 20px;
+
+  /* Animaciones */
+  --transition-fast: 0.2s ease;
+  --transition: 0.3s ease;
+}

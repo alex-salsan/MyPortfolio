@@ -1,0 +1,60 @@
+/*
+  InputAS — variables personalizables.
+  Comparte el sistema de variables --form-* con FormAS, así que si copias
+  ambos componentes solo necesitas declarar este bloque una vez.
+*/
+:root {
+  --form-label-size: 0.85rem;
+  --form-text-size: 0.95rem;
+  --form-control-label-color: #ccc;
+  --form-control-text-color: #ffffff;
+  --form-control-text-placeholder: #777;
+  --form-control-border-color: #2a2a2a;
+  --form-control-border-color-hover: #7c5cff;
+  --text-color-message: #ff6b6b;
+}
+
+.inputAS {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.inputAS .inputAS_label {
+  font-size: var(--form-label-size);
+  font-weight: bold;
+  color: var(--form-control-label-color);
+}
+
+.inputAS .inputAS_input {
+  background-color: #1a1a1a;
+  border: 1.5px solid var(--form-control-border-color);
+  border-radius: 10px;
+  padding: 0.6rem 0.8rem;
+  font-size: var(--form-text-size);
+  color: var(--form-control-text-color);
+  outline: none;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.inputAS .inputAS_input::placeholder {
+  color: var(--form-control-text-placeholder);
+}
+
+.inputAS .inputAS_input:focus {
+  border-color: var(--form-control-border-color-hover);
+  box-shadow: 0 0 0 3px rgba(124, 92, 255, 0.15);
+}
+
+.inputAS .inputAS_input-error {
+  border-color: var(--text-color-message);
+}
+
+.inputAS .inputAS_error {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--text-color-message);
+  margin: 0;
+}

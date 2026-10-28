@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  margin-left: var(--sidebar-width);
+}
+
+section {
+  min-height: 100vh;
+  padding: 5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section > * {
+  max-width: var(--content-max-width);
+  width: 100%;
+  margin-inline: auto;
+}
+
+section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  main {
+    margin-left: 0;
+    padding-top: var(--mobile-nav-height);
+  }
+
+  section {
+    min-height: auto;
+    padding: 2.5rem 1.5rem;
+    /* Evita que la barra fija tape el título al navegar a una sección */
+    scroll-margin-top: var(--mobile-nav-height);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Utilidades */
+.iconSmall {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.iconInline {
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-right: 5px;
+}

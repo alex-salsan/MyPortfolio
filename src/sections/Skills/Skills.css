@@ -1,0 +1,43 @@
+.skillsSection {
+  text-align: center;
+
+  & .skillsGroups {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  & .skillGroup h3 {
+    color: var(--color-accent);
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  & .skillsGrid {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    justify-content: center;
+  }
+
+  & .skillBadge {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-soft);
+    padding: 0.5rem 1.1rem;
+    border-radius: var(--radius-pill);
+    font-size: 0.85rem;
+    transition:
+      border-color var(--transition),
+      color var(--transition),
+      transform var(--transition-fast);
+
+    &:hover {
+      border-color: var(--color-accent);
+      color: var(--color-text-strong);
+      transform: translateY(-2px);
+    }
+  }
+}

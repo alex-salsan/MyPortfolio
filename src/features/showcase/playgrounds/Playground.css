@@ -1,0 +1,92 @@
+.playground {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.playgroundPreview {
+  background: #111;
+  border: 1px dashed var(--color-border);
+  border-radius: 14px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+}
+
+.playgroundControls {
+  background: #0f0f0f;
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  & h4 {
+    color: var(--color-accent-soft);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+}
+
+.controlGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.85rem;
+  color: var(--color-text-soft);
+
+  & input,
+  & select {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    padding: 0.45rem 0.6rem;
+    color: var(--color-text-strong);
+
+    &:focus {
+      outline: none;
+      border-color: var(--color-accent);
+    }
+  }
+}
+
+.controlGroupCheckbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+
+  & input[type='checkbox'] {
+    width: 16px;
+    height: 16px;
+    accent-color: var(--color-accent);
+    cursor: pointer;
+  }
+}
+
+.playgroundCode {
+  background: #0a0a0a;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 0.7rem;
+  font-size: 0.72rem;
+  color: var(--color-accent);
+  overflow-x: auto;
+  margin-top: auto;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 700px) {
+  .playground {
+    grid-template-columns: 1fr;
+  }
+
+  .playgroundPreview {
+    padding: 1rem;
+    min-height: auto;
+  }
+}

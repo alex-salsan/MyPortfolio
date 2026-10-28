@@ -1,0 +1,79 @@
+.about {
+  text-align: center;
+
+  & h2 {
+    margin-bottom: 1rem;
+  }
+
+  & .aboutIntro,
+  & .aboutOutro {
+    max-width: 600px;
+    color: var(--color-text-soft);
+  }
+
+  & .aboutIntro {
+    margin: 0 auto 3rem;
+    font-size: 1.1rem;
+  }
+
+  & .aboutOutro {
+    margin: 3rem auto 0;
+    font-size: 1.05rem;
+  }
+
+  & .timeline {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-left: 2rem;
+    border-left: 2px solid var(--color-border);
+  }
+
+  & .timelineItem {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: -2.4rem;
+      top: 0.3rem;
+      width: 10px;
+      height: 10px;
+      background: var(--color-accent);
+      border-radius: 50%;
+    }
+
+    & h3 {
+      margin: 0.3rem 0 0.4rem;
+      color: var(--color-text-strong);
+    }
+
+    & p {
+      color: var(--color-text-muted);
+      font-size: 0.95rem;
+    }
+  }
+
+  & .timelinePeriod {
+    color: var(--color-accent);
+    font-size: 0.85rem;
+    font-weight: 600;
+  }
+
+  & .timelineLink {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--color-accent-light);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
